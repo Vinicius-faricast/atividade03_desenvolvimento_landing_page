@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root{
+    --primary-color:#63800c;
+    --primary-color-light: #74950e;
+    --primary-color-extra-light: #9dcb13;
+    --primary-color-dark: #1d3200;
+    --secundary-color-dark: #141414;
+    --secundadry-color-medium: #878787;
+}
