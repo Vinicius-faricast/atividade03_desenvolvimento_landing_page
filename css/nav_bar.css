@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.nav-bar{
+    background-color: var(--secundary-color-dark);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+
+}
+
+.container-itens{
+    padding: 2rem;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.logo{
+    display: inline;
+    color: white;
+    font-weight: 200;
+}
+
+.logo span{
+    color: var(--primary-color-extra-light);
+    font-weight: 800;
+}
+
+.nav-itens{
+    display: inline;
+    float: right;
+}
+
+.nav-itens li{
+    display: inline;
+    padding-inline: 2rem;
+}
+
+.nav-itens li a{
+    font-size: .9rem;
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+    padding: .1rem;
+}
+
+
+.nav-itens li a:hover{
+    border-bottom: .1rem solid var(--primary-color-extra-light);
+    color: var(--primary-color-extra-light);
+}
