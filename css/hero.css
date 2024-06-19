@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.hero{
+    background-image: url(../assets/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: var(--primary-color);
+    padding: 13rem 0;
+    
+}
+
+.hero-content{
+    width: 107rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.hero-content h1, .hero-content p{
+    width: 45%;
+}
+
+.hero-content h1{
+    font-size: 4.6rem;
+}
+
+.hero-paragraph{
+    font-size: 1.6rem;
+    color: white;
+    padding-block: 2rem;
+    text-shadow: 1px 1px 4px black;
+}

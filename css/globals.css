@@ -5,35 +5,13 @@ span{
     font-weight: 800;
 }
 
-.hero{
-    background-image: url(../assets/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
-    background-color: var(--primary-color);
-    padding: 10rem;
-}
-
-.hero-content{
-    max-width: 34rem;
-}
-
-.hero-paragraph{
-    font-size: 1.2rem;
-    color: white;
-    padding-block: 2rem;
-    text-shadow: 1px 1px 4px black;
-}
-
 .cta-btn{
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 2rem;
+    border-radius: .5rem;
     border-style: none;
     background-color: var(--primary-color-dark);
     color: white;
-    font-size: 1rem;
+    font-size: 1.6rem;
     box-shadow: 1px 1px 3px var(--primary-color-dark);
     cursor: pointer;
     transition: all .5s ease-in-out;
@@ -42,4 +20,76 @@ span{
 .cta-btn:hover{
     background-color: var(--primary-color-extra-light);
     transform: scale(110%);
+}
+
+.main-container{
+    max-width: 108rem;
+    margin: 5rem auto;
+}
+
+#about-us{
+    max-width: 50%;
+    float: left;
+    padding-top: 9rem;
+}
+
+#about-us h3{
+    font-size: 1.4rem;
+    padding-left: 3.5rem;
+    position: relative;
+}
+
+#about-us h3::before{
+    content: '';
+    width: 3rem;
+    height: 1rem;
+    background-color: var(--primary-color-extra-light);
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    top: .4rem;
+    z-index: -1;
+}
+
+#about-us h2{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+#about-us p{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.article-about-us{
+    margin-top: 9rem;
+    max-width: 45%;
+    float: right;
+    overflow: hidden;
+    background: var(--secundary-color-dark);
+    box-shadow: 0px 0px 3px var(--secundary-color-dark);
+
+}
+
+.article-about-us img{
+    height: 30rem;
+    /* object-fit: cover; */
+}
+
+.article-about-us h2{
+    /* display: block; */
+    font-size: 9rem;
+    text-align: left;
+}
+
+footer{
+    clear: both;
+    border: 1px solid red;
+}
+
+.article-text{
+    padding: 3rem;
+    background: var(--secundary-color-dark);
+    color: white;
 }
