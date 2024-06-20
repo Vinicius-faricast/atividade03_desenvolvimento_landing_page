@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
-span{
+span {
     color: var(--primary-color-extra-light);
     font-weight: 800;
+    height: 100%;
 }
 
-.cta-btn{
+.cta-btn {
     padding: 2rem;
     border-radius: .5rem;
     border-style: none;
@@ -17,29 +18,30 @@ span{
     transition: all .5s ease-in-out;
 }
 
-.cta-btn:hover{
+.cta-btn:hover {
     background-color: var(--primary-color-extra-light);
     transform: scale(110%);
 }
 
-.main-container{
+.main-container {
     max-width: 108rem;
     margin: 5rem auto;
 }
 
-#about-us{
+#about-us {
     max-width: 50%;
     float: left;
     padding-top: 9rem;
+    margin-bottom: 3rem;
 }
 
-#about-us h3{
+#about-us h3 {
     font-size: 1.4rem;
     padding-left: 3.5rem;
     position: relative;
 }
 
-#about-us h3::before{
+#about-us h3::before {
     content: '';
     width: 3rem;
     height: 1rem;
@@ -52,17 +54,17 @@ span{
     z-index: -1;
 }
 
-#about-us h2{
+#about-us h2 {
     font-size: 3.2rem;
     margin-bottom: 2rem;
 }
 
-#about-us p{
+#about-us p {
     font-size: 1.4rem;
     text-align: justify;
 }
 
-.article-about-us{
+.article-about-us {
     margin-top: 9rem;
     max-width: 45%;
     float: right;
@@ -72,24 +74,71 @@ span{
 
 }
 
-.article-about-us img{
+.article-about-us img {
     height: 30rem;
-    /* object-fit: cover; */
 }
 
-.article-about-us h2{
-    /* display: block; */
+.article-about-us h2 {
     font-size: 9rem;
     text-align: left;
 }
 
-footer{
-    clear: both;
-    border: 1px solid red;
-}
-
-.article-text{
-    padding: 3rem;
+.article-text {
+    padding: 0rem 3rem 3rem 3rem;
     background: var(--secundary-color-dark);
     color: white;
+}
+
+.logo-footer {
+    display: inline;
+    color: white;
+    font-weight: 200;
+    font-size: 2.4rem;
+}
+
+footer {
+    clear: both;
+    background-color: var(--secundary-color-dark);
+    width: 100%;
+    /* padding: 2rem; */
+    /* border: 1px solid red; */
+}
+
+.footer-content {
+    width: 108rem;
+    margin: 0 auto;
+    padding: 4rem;
+    border: 1px solid red;
+    position: relative;
+}
+
+.social-media {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    /* border: 1px solid red; */
+}
+
+.social-media h3 {
+    color: white;
+}
+
+i {
+    width: 4rem;
+    color: white;
+}
+
+.form-footer {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+label {
+    color: white;
+    /* background-color: var(--primary-color-extra-light); */
+    /* padding: 2rem; */
 }
