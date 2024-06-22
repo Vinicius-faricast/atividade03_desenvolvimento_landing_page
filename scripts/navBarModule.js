@@ -4,10 +4,10 @@ const home = document.querySelector('#home');
 const navList = [
     {path: 'index.html#about-us', value: 'Quem Somos'},
     {path: 'services.html', value: 'Nossos Serviços'},
-    {path: '#', value: 'Fale Conosco'}
+    {path: 'contact.html', value: 'Fale Conosco'}
 ]
 
-const createNavBar = () => {
+export const createNavBar = () => {
     const header = document.createElement('header');
     header.classList.add('nav-bar');
 
@@ -38,8 +38,6 @@ const createNavBar = () => {
         return li;
     });
 
-    console.log(listItem)
-
     listItem.forEach(element => {
         ul.appendChild(element);
     });
@@ -51,6 +49,4 @@ const createNavBar = () => {
     nav.appendChild(ul);
     header.appendChild(nav);
     body.insertAdjacentElement('afterbegin', header);
-}
-
-createNavBar()
+};

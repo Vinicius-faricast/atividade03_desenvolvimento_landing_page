@@ -11,6 +11,7 @@ footer {
     clear: both;
     background-color: var(--secundary-color-dark);
     width: 100%;
+    bottom: 0;
 }
 
 .footer-content {
@@ -75,6 +76,7 @@ label {
     display: inline;
     width: 1rem;
     right: 2rem;
+    margin-left: .5rem;
     cursor: pointer;
 }
 

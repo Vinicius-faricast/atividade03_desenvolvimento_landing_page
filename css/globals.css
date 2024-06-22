@@ -28,20 +28,20 @@ span {
     margin: 5rem auto;
 }
 
-#about-us {
+.section-configs {
     max-width: 50%;
     float: left;
     padding-top: 9rem;
     margin-bottom: 3rem;
 }
 
-#about-us h3 {
+.section-configs-h3 {
     font-size: 1.4rem;
     padding-left: 3.5rem;
     position: relative;
 }
 
-#about-us h3::before {
+.section-configs-h3::before {
     content: '';
     width: 3rem;
     height: 1rem;
@@ -54,12 +54,12 @@ span {
     z-index: -1;
 }
 
-#about-us h2 {
+.section-configs-h2 {
     font-size: 3.2rem;
     margin-bottom: 2rem;
 }
 
-#about-us p {
+.section-configs p {
     font-size: 1.4rem;
     text-align: justify;
 }

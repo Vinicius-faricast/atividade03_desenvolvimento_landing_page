@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/_main.css">
-    <script defer src="scripts/navBarModule.js"></script>
+    <script type="module" src="scripts/_app.js" defer></script>
     <title>Contato</title>
 </head>
+
 <body class="body">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod beatae quae eligendi repellat eveniet aliquid eius ex voluptatem, sunt vel repellendus, odit sint quisquam, maiores cumque officiis reprehenderit ea.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, impedit id necessitatibus adipisci voluptas, error laboriosam dolor totam magnam maiores nam fugiat quaerat mollitia, eos numquam maxime neque voluptates! Odio?</p>
+    <main class="main-container main-container-contact">
+        <section class="configs-contact">
+            <h3 class="section-configs-h3">Contato</h3>
+            <h2 class="section-configs-h2">Entre em <span>contato conosco</span>.</h2>
+            <form class="contact-form">
+                <input class="input-field-data" type="text" placeholder="Nome" required>
+                <input class="input-field-data" type="email" placeholder="Digite seu email" required>
+                <input class="input-field-message-title" type="text" placeholder="Assunto">
+                <textarea placeholder="Digite sua mensagem"></textarea>
+                <button class="form-btn">Enviar!</button>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
