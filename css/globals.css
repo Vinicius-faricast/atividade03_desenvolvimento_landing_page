@@ -10,8 +10,8 @@ span {
     padding: 2rem;
     border-radius: .5rem;
     border-style: none;
-    background-color: var(--primary-color-dark);
-    color: white;
+    background-color: var(--secundary-color-ligth);
+    color: var(--primary-color-dark);
     font-size: 1.6rem;
     box-shadow: 1px 1px 3px var(--primary-color-dark);
     cursor: pointer;

@@ -26,6 +26,10 @@
     font-size: 4.6rem;
 }
 
+.span-hero{
+    color: var(--secundary-color-ligth);
+}
+
 .hero-paragraph{
     font-size: 1.6rem;
     color: white;

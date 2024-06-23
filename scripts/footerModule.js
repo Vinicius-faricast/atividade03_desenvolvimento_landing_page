@@ -35,6 +35,7 @@ export const createFooter = () => {
     formFooter.classList.add('form-footer');
 
     const form = document.createElement('form');
+    form.classList.add('newsletter-form');
     const titleForm = document.createElement('h3');
     titleForm.innerText = 'Newsletter';
 
