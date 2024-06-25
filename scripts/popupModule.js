@@ -24,6 +24,7 @@ export const popUpNewsletter = () => {
 
 export const popUpContact = () => {
     const contactForm = document.querySelector('.contact-form');
-
-    createModal(contactForm, 'Mensagem enviada com sucesso!');
+    if(contactForm){
+        createModal(contactForm, 'Mensagem enviada com sucesso!');
+    }
 }
