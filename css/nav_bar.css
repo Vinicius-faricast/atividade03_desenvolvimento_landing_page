@@ -3,14 +3,14 @@
 .nav-bar{
     background-color: var(--secundary-color-dark);
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     padding: 2rem;
     z-index: 100;
 }
 
 .container-itens{
-    max-width: 108rem;
+    max-width: 124rem;
     height: 100%;
     margin: auto;
 }

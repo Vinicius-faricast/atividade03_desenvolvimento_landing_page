@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .hero{
+    width: 100%;
     background-image: url(../assets/business-man-financial.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -9,13 +10,13 @@
     background-blend-mode: multiply;
     background-color: var(--primary-color);
     padding: 13rem 0;
-    
 }
 
 .hero-content{
-    width: 107rem;
+    max-width: 124rem;
     padding: 2rem;
     margin: 0 auto;
+
 }
 
 .hero-content h1, .hero-content p{

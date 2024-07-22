@@ -1,21 +1,18 @@
 @charset "UTF-8";
 
 .main-container-contact{
-    height: 90vh;
+    height: 100vh;
     margin-bottom: 0;
     padding-top: 6rem;
 }
 
 .configs-contact {
     max-width: 100%;
-    height: 100%;
-    float: none;
     padding-inline: 8rem;
     margin-bottom: 3rem;
 }
 
 .contact-form{
-    width: 50%;
     margin: 3rem auto;
     text-align: center;
     border: .1rem solid var(--secundadry-color-medium);
