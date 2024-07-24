@@ -25,11 +25,12 @@ span {
 
 .main-container {
     display: flex;
+    min-height: 100%;
     gap: 4rem;
     justify-content: space-around;
     align-items: center;
     max-width: 124rem;
-    margin: 5rem auto;   
+    margin: 5rem auto;  
 }
 
 .section-configs {

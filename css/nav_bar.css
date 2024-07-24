@@ -4,36 +4,39 @@
     background-color: var(--secundary-color-dark);
     position: fixed;
     width: 100%;
+    height: 7rem;
     top: 0;
     padding: 2rem;
     z-index: 100;
 }
 
 .container-itens{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 124rem;
-    height: 100%;
     margin: auto;
 }
 
+.container-itens a{
+    text-decoration: none;
+}
+
 .logo{
-    float: left;
     color: white;
     font-weight: 200;
     font-size: 2.4rem;
 }
 
 .nav-itens{
-    float: inline-end;
-    display: block;
-    height: 100%;
-    margin-top: .4rem;
+    display: flex;  
+    justify-content: space-evenly;
+    gap: 3rem;
 }
 
 .nav-itens li{
-    display: inline-block;
-    height: 50%;
     margin-top: auto 0;
-    padding-inline: 2rem;
+    list-style: none;
 }
 
 .nav-itens li a{
@@ -48,4 +51,16 @@
 .nav-itens li a:hover{
     border-bottom: .1rem solid var(--primary-color-extra-light);
     color: var(--primary-color-extra-light);
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 3.2rem;
+    height: 0.2rem;
+    background: #fff;
+    margin: 0.8rem;
 }

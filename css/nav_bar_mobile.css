@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 999px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-itens{
+        position: absolute;
+        top: 7rem;
+        right: 0;
+        width: 50vw;
+        height: calc(100vh - 7rem);
+        background-color: var(--secundary-color-dark);
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+    }
+
+    .nav-itens li{
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+}
+
+.nav-itens.active{
+    transform: translateX(0);
+}

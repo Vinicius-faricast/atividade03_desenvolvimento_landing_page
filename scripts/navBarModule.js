@@ -42,10 +42,24 @@ export const createNavBar = () => {
         ul.appendChild(element);
     });
 
+    //menu mobile
+    const mobileMenuDiv = document.createElement('div');
+    mobileMenuDiv.classList.add('mobile-menu');
+    const listLinesMobileMenu = [];
+    for (let index = 0; index < 3; index++) {
+        const line = document.createElement('div');
+        line.classList.add(`line${index+1}`)
+        listLinesMobileMenu.push(line);
+    };
+
+    listLinesMobileMenu.forEach(line => {
+        mobileMenuDiv.appendChild(line);
+    })
     
     h3.appendChild(span);
     brandNav.appendChild(h3)
     nav.appendChild(brandNav);
+    nav.appendChild(mobileMenuDiv);
     nav.appendChild(ul);
     header.appendChild(nav);
     body.insertAdjacentElement('afterbegin', header);

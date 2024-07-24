@@ -4,7 +4,9 @@
 footer {
     background-color: var(--secundary-color-dark);
     width: 100%;
-    bottom: 0;
+    position: relative;
+    /* top: 100%; */
+    /* bottom: -30%; */
 }
 
 .logo-footer {
