@@ -63,4 +63,5 @@
     height: 0.2rem;
     background: #fff;
     margin: 0.8rem;
+    transition:all 0.3s;
 }
