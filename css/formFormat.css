@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 .main-container-contact{
-    /* height: 100vh; */
+    /* min-height: 100vh; */
     margin-bottom: 0;
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
 }
 
 .configs-contact {
