@@ -1,10 +1,10 @@
 const body = document.querySelector('.body');
 const home = document.querySelector('#home');
 
-const navList = [
-    {path: 'index.html#about-us', value: 'Quem Somos'},
-    {path: 'services.html', value: 'Nossos Serviços'},
-    {path: 'contact.html', value: 'Fale Conosco'}
+export const navList = [
+    {path: 'about-us', value: 'Quem Somos'},
+    {path: 'services', value: 'Nossos Serviços'},
+    {path: 'contact', value: 'Fale Conosco'}
 ]
 
 export const createNavBar = () => {
@@ -15,7 +15,7 @@ export const createNavBar = () => {
     nav.classList.add('container-itens');
 
     const brandNav = document.createElement('a');
-    const attributeValue = home ? "#home" : "index.html";
+    const attributeValue = home ?? "#home";
     brandNav.setAttribute("href", attributeValue);
     const h3 = document.createElement('h3');
     h3.classList.add('logo');
@@ -31,7 +31,8 @@ export const createNavBar = () => {
         const li = document.createElement('li');
         const a = document.createElement('a');
 
-        a.setAttribute('href', path);
+        a.setAttribute('href', `#${path}`);
+        a.setAttribute('id', `${path}`);
         a.innerText = value;
 
         li.appendChild(a);

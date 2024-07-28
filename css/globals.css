@@ -6,6 +6,10 @@ span {
     height: 100%;
 }
 
+#root{
+    min-height: 100vh;
+}
+
 .cta-btn {
     padding: 2rem;
     border-radius: .5rem;

@@ -18,8 +18,9 @@ const createModal = (form, message) => {
 
 export const popUpNewsletter = () => {
     const formNewsletter = document.querySelector('.newsletter-form');
-
-    createModal(formNewsletter, 'Assinatura realizada com sucesso!');
+    if(formNewsletter){
+        createModal(formNewsletter, 'Assinatura realizada com sucesso!');
+    }
 }
 
 export const popUpContact = () => {
