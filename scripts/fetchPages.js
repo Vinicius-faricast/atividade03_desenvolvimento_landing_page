@@ -11,7 +11,7 @@ const renderPages = () => {
     console.log(window.location.hash ==='#about-us')
     if(window.location.hash ==='#about-us'){
         hash = '';
-    }
+    };
 
     hash = validateHash(hash);
 
@@ -20,7 +20,7 @@ const renderPages = () => {
     const url = `./${hash}.html`;
 
     fetchPages(url);
-}
+};
 
 const init = () => window.addEventListener('hashchange', renderPages)
 
@@ -31,8 +31,8 @@ export const insertPages = () => {
         createFooter();
         renderPages();
         init()
-    })
-}
+    });
+};
 
 export const fetchPages = async (url) => {
     try {
@@ -41,39 +41,6 @@ export const fetchPages = async (url) => {
         root.innerHTML = htmlInText;
     } catch (error) {
         throw new Error(`Erro ao carregar o arquivo: ${error}`);
-    }
+    };
 
-}
-
-// <!-- index.html -->
-// <!DOCTYPE html>
-// <html>
-// <head>
-//     <title>Injeção de Conteúdo com Fetch API</title>
-// </head>
-// <body>
-//     <div id="content"></div>
-
-//     <script>
-//         // Caminho para o arquivo HTML externo
-//         const url = './contato.html';
-
-//         // Fazendo a requisição para o arquivo HTML externo
-//         fetch(url)
-//             .then(response => {
-//                 // Verificando se a requisição foi bem-sucedida
-//                 if (!response.ok) {
-//                     throw new Error(`Erro ao carregar o arquivo: ${response.status}`);
-//                 }
-//                 return response.text(); // Extrai o corpo da resposta como texto
-//             })
-//             .then(html => {
-//                 // Injetando o conteúdo HTML no elemento desejado
-//                 document.getElementById('content').innerHTML = html;
-//             })
-//             .catch(error => console.error('Erro:', error));
-//     </script>
-// </body>
-// </html>
-
-
+};

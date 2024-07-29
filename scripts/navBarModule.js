@@ -32,7 +32,7 @@ export const createNavBar = () => {
         const a = document.createElement('a');
 
         a.setAttribute('href', `#${path}`);
-        a.setAttribute('id', `${path}`);
+        // a.setAttribute('id', `${path}`);
         a.innerText = value;
 
         li.appendChild(a);
