@@ -27,16 +27,38 @@
             </article>
         </section>
 
-        <section class="article-services">
+        <section class="budget-section">
             <h1>Quer um <span>Orçamento rápido?</span></h1>
             <p>Selecione os serviços que deseja para sua empresa e lhe responderemos com um orçamento o mais rápido possivél</p>
-            <form>
-                <label for="name">Nome</label>
-                <input type="text" id="name"> 
-                <label for="email">E-mail</label>
-                <input type="email">
+            <form class="budget-contact">
+                <div class="fields-container">
+                    <div class="contact-field">
+                        <label class="label-budget" for="name">Nome</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="contact-field">
+                        <label class="label-budget" for="email">E-mail</label>
+                        <input type="email" required>
+                    </div>
+                </div>
+                <ul class="list-budget">
+                    <li class="item-budget">
+                        <div>
+                            <img class="item-budget-img" src="assets/alvo.png" alt="">
+                            <h1 class="item-budget-title">Loren Ipsum</h1>
+                        </div>
+                        <button class="item-btn-delete"><i class="fa-solid fa-trash-can fa-lg" style="color: #fff;"></i></button>
+                    </li>
+                    <li class="item-budget">
+                        <div>
+                            <img class="item-budget-img" src="assets/alvo.png" alt="">
+                            <h1 class="item-budget-title">Loren Ipsum</h1>
+                        </div>
+                        <button class="item-btn-delete"><i class="fa-solid fa-trash-can fa-lg" style="color: #fff;"></i></button>
+                    </li>
+                </ul>
+                <button class="form-btn">Enviar</button>
             </form>
-            <button class="form-btn">Enviar</button>
         </section>
         
     </main>

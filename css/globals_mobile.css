@@ -61,13 +61,14 @@
         min-width: 60%;
     }
 
-    .main-container{
+    .main-container, .container-services, .section-sevices{
         flex-wrap: wrap;
         flex-direction: column;
-
+        align-items: center;
+        gap: 2rem;
     }
 
-    .article-services{
+    .article-services {
         max-width: 80%;
         flex-direction: row;
         gap: 2rem;
@@ -110,6 +111,32 @@
         flex-direction: column;
         gap: 2rem;
         padding: 2rem;
+    }
+
+    .fields-container{
+        flex-direction: column;
+    }
+
+    .section-sevices{
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .budget-section{
+        width: 90%;
+    }
+
+    .budget-contact{
+        flex-direction: column;
+    }
+    
+    .contact-field{
+        width: 100%;
+    }
+
+    .budget-section p{
+        width: 100%;
     }
 
     .article-text-service{

@@ -5,8 +5,6 @@ const handleClick = (mobileMenu, navItens, navLinks) => {
 
     navLinks.forEach(link => {
         link.style.animation = `navLinkFade 0.5s ease fowards 0.3s`
-
-        console.log(link.style)
     });
 
 }

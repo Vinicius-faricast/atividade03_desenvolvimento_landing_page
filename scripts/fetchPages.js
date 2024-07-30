@@ -8,7 +8,7 @@ const validateHash = (hash) => hash === ""  ? 'home' : hash.replace('#', '');
 
 const renderPages = () => {
     let hash = window.location.hash;
-    console.log(window.location.hash ==='#about-us')
+
     if(window.location.hash ==='#about-us'){
         hash = '';
     };
