@@ -138,3 +138,10 @@
 .i{
     color: #fff;
 }
+
+.message-add{
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 3rem;
+    color: var(--primary-color-extra-light);
+}

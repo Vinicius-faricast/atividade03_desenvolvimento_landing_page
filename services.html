@@ -1,28 +1,28 @@
-    <main class="min-height container-services">
-        <section class="section-sevices">
-            <article class="article-services">
-                <img src="assets/alvo.png" alt="icone de alvo">
+    <main id="services" class="min-height container-services">
+        <section  class="section-sevices">
+            <article class="article-services" data-js="alvo">
+                <img src="assets/alvo.png" alt="icone de alvo" data-js="alvo">
                 <div class="article-text-service">
-                    <h2><span>Lorem ipsum</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime veniam quam ipsam iusto adipisci. Voluptatibus, blanditiis quisquam, nesciunt autem doloribus perferendis dolore quaerat culpa laborum modi a! Quidem, excepturi?</p>
-                    <button class="form-btn">Adicionar</button>
+                    <h2 data-js="alvo"><span data-js="alvo">Lorem ipsum1</span></h2>
+                    <p data-js="alvo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime veniam quam ipsam iusto adipisci. Voluptatibus, blanditiis quisquam, nesciunt autem doloribus perferendis dolore quaerat culpa laborum modi a! Quidem, excepturi?</p>
+                    <p class="message-add" data-js="alvo">Clique para adicionar ao orçamento</p>
                 </div>
             </article>
-            <article class="article-services">
-                <img src="assets/carteira.png" alt="Equipe financeira em reunião">
+            <article class="article-services" data-js="carteira">
+                <img src="assets/carteira.png" alt="Equipe financeira em reunião" data-js="carteira">
                 <div class="article-text-service">
-                    <h2><span>Lorem ipsum</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime veniam quam ipsam iusto adipisci. Voluptatibus, blanditiis quisquam, nesciunt autem doloribus perferendis dolore quaerat culpa laborum modi a! Quidem, excepturi?</p>
-                    <button class="form-btn">Adicionar</button>
+                    <h2 data-js="carteira"><span data-js="carteira">Lorem ipsum2</span></h2>
+                    <p data-js="carteira">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime veniam quam ipsam iusto adipisci. Voluptatibus, blanditiis quisquam, nesciunt autem doloribus perferendis dolore quaerat culpa laborum modi a! Quidem, excepturi?</p>
+                    <p class="message-add" data-js="carteira">Clique para adicionar ao orçamento</p>
                 </div>
                 
             </article>
-            <article class="article-services">
-                <img src="assets/grafico.png" alt="Equipe financeira em reunião">
-                <div class="article-text-service">
-                    <h2><span>Lorem ipsum</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime veniam quam ipsam iusto adipisci. Voluptatibus, blanditiis quisquam, nesciunt autem doloribus perferendis dolore quaerat culpa laborum modi a! Quidem, excepturi?</p>
-                    <button class="form-btn">Adicionar</button>
+            <article class="article-services" data-js="grafico">
+                <img src="assets/grafico.png" alt="Equipe financeira em reunião" data-js="grafico">
+                <div>
+                    <h2 data-js="grafico"><span data-js="grafico">Lorem ipsum3</span></h2>
+                    <p data-js="grafico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime veniam quam ipsam iusto adipisci. Voluptatibus, blanditiis quisquam, nesciunt autem doloribus perferendis dolore quaerat culpa laborum modi a! Quidem, excepturi?</p>
+                    <p class="message-add" data-js="grafico">Clique para adicionar ao orçamento</p>
                 </div>
             </article>
         </section>
@@ -38,27 +38,16 @@
                     </div>
                     <div class="contact-field">
                         <label class="label-budget" for="email">E-mail</label>
-                        <input type="email" required>
+                        <input type="email" id="email" required>
                     </div>
                 </div>
-                <ul class="list-budget">
-                    <li class="item-budget">
-                        <div>
-                            <img class="item-budget-img" src="assets/alvo.png" alt="">
-                            <h1 class="item-budget-title">Loren Ipsum</h1>
-                        </div>
-                        <button class="item-btn-delete"><i class="fa-solid fa-trash-can fa-lg" style="color: #fff;"></i></button>
-                    </li>
-                    <li class="item-budget">
-                        <div>
-                            <img class="item-budget-img" src="assets/alvo.png" alt="">
-                            <h1 class="item-budget-title">Loren Ipsum</h1>
-                        </div>
-                        <button class="item-btn-delete"><i class="fa-solid fa-trash-can fa-lg" style="color: #fff;"></i></button>
-                    </li>
-                </ul>
                 <button class="form-btn">Enviar</button>
             </form>
+                <ul class="list-budget">
+
+                </ul>
+
         </section>
         
+        <script src="scripts/budgetApi.js">dd</script>
     </main>

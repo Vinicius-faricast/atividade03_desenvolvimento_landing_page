@@ -1,6 +1,7 @@
 import { createFooter } from "./footerModule.js";
 import { createMobileMenu } from "./mobileNavbar.js";
 import { createNavBar } from "./navBarModule.js";
+import { budgetApi } from "./budgetApi.js";
 
 const root = document.querySelector('#root');
 
@@ -43,4 +44,5 @@ export const fetchPages = async (url) => {
         throw new Error(`Erro ao carregar o arquivo: ${error}`);
     };
 
+    budgetApi()
 };
