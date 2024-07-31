@@ -18,4 +18,17 @@ Não permitido o uso de display grid ou display flex
 ![GitHub language count](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 ![GitHub language count](https://img.shields.io/badge/JS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 
+## Atividade 04 - Aprimorar o projeto da atividade 03
+
+## Objetivo
+Aprimorar o projeto da atividade 03 com todo o conhecimento adquirido
+
+### NOVAS FEATURES
+• Crie uma branche adicional para o desenvolvimento dos novos recursos do projeto;
+• Reestruture a aplicação para que ela seja estruturada através de Grid e Flexbox;
+• Faça com que as transições sejam assíncronas através de: ajax, fetch e promises;
+• Adicione operações CRUD com o LocalStorage;
+• Responsividade completa.
+
 ### [Acesse o link e veja o projeto na integra](https://consultoriafinanceira.netlify.app/index.html)
+
