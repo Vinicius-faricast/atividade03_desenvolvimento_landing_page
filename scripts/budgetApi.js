@@ -31,11 +31,61 @@ const createItem = (h1Text, dataJsValue) => {
     li.appendChild(div);
     li.appendChild(btn);
 
-    ul.appendChild(li);
+    if(ul){
+
+        ul.appendChild(li);
+    }
 };
+
+const setLocalStorage = (idValue, titleValue, imgValue) => {
+
+    const budget ={ 
+        id: idValue,
+        title: titleValue,
+        img: imgValue
+    };
+    
+    const list = localStorage.getItem('listBudget')
+    let newList
+
+    if(list){
+        newList = JSON.parse(list);
+        let index = newList.findIndex(item => item.id === budget.id)
+        if(index >= 0){
+            // renderList()
+            return;
+        };
+        // renderList();
+
+    }else {
+        newList = []
+    }
+
+    newList = [...newList, budget]
+      
+    localStorage.setItem('listBudget', JSON.stringify(newList));
+
+    console.log(newList)
+    createItem(titleValue, idValue)
+}
+
+const renderList = () => {
+    const list = localStorage.getItem('listBudget')
+    let newList
+
+    if(list){
+        newList = JSON.parse(list);
+        newList.forEach(({id, title}) => {
+            createItem(title, id)
+        })
+    }else {
+        newList = []
+    }
+}
 
 export const budgetApi = () => {
     const articles = document.querySelectorAll('.article-services');
+    renderList()
 
     articles.forEach(article => {
         article.addEventListener('click', (e) => {
@@ -43,10 +93,10 @@ export const budgetApi = () => {
             const [, , h2,] = document.querySelectorAll(`[data-js = ${target}]`);
             const title = h2.innerText;
 
-            createItem(title, target)
-            // console.log(h2);
+            setLocalStorage(target, title, target)
 
             const btnsDelet = document.querySelectorAll('.item-btn-delete');
+
             if (btnsDelet) {
                 btnsDelet.forEach(btnDelet => {
                     btnDelet.addEventListener('click', (e) => {
@@ -62,7 +112,6 @@ export const budgetApi = () => {
                     })
                 })
             }
-            // console.log(btnDelet);
 
         });
     });
