@@ -31,7 +31,7 @@ const createItem = (h1Text, dataJsValue) => {
     li.appendChild(div);
     li.appendChild(btn);
 
-    if(ul){
+    if (ul) {
 
         ul.appendChild(li);
     }
@@ -39,80 +39,94 @@ const createItem = (h1Text, dataJsValue) => {
 
 const setLocalStorage = (idValue, titleValue, imgValue) => {
 
-    const budget ={ 
+    const budget = {
         id: idValue,
         title: titleValue,
         img: imgValue
     };
-    
+
     const list = localStorage.getItem('listBudget')
     let newList
 
-    if(list){
+    if (list) {
         newList = JSON.parse(list);
         let index = newList.findIndex(item => item.id === budget.id)
-        if(index >= 0){
-            // renderList()
+        if (index >= 0) {
+
             return;
         };
-        // renderList();
 
-    }else {
+    } else {
         newList = []
     }
 
     newList = [...newList, budget]
-      
+
     localStorage.setItem('listBudget', JSON.stringify(newList));
 
-    console.log(newList)
-    createItem(titleValue, idValue)
+    createItem(titleValue, idValue);
+    
 }
 
 const renderList = () => {
-    const list = localStorage.getItem('listBudget')
+    const list = localStorage.getItem('listBudget');
+    const ul = document.querySelector('.list-budget');
+    if(ul) ul.innerHTML = ''
     let newList
 
-    if(list){
+    if (list) {
         newList = JSON.parse(list);
-        newList.forEach(({id, title}) => {
+        newList.forEach(({ id, title }) => {
             createItem(title, id)
         })
-    }else {
+    } else {
         newList = []
     }
 }
 
+const deleteItemList = (e) => {
+    const target = e.target.getAttribute('data-js');
+    const lis = document.querySelectorAll(`li`);
+
+    lis.forEach(li => {
+
+        if (li.getAttribute('data-js') === target) {
+
+            const list = localStorage.getItem('listBudget');
+            let newList = JSON.parse(list);
+
+            newList = newList.filter(item => item.id !== target);
+            localStorage.setItem('listBudget', JSON.stringify(newList));
+
+            li.remove()
+
+        }
+    })
+}
+
 export const budgetApi = () => {
-    const articles = document.querySelectorAll('.article-services');
     renderList()
 
+    const articles = document.querySelectorAll('.article-services');
+    let btnsDelet = document.querySelectorAll('.item-btn-delete');
+    
     articles.forEach(article => {
         article.addEventListener('click', (e) => {
             const target = e.target.getAttribute('data-js');
             const [, , h2,] = document.querySelectorAll(`[data-js = ${target}]`);
             const title = h2.innerText;
 
-            setLocalStorage(target, title, target)
+            setLocalStorage(target, title, target);
 
-            const btnsDelet = document.querySelectorAll('.item-btn-delete');
-
-            if (btnsDelet) {
+            btnsDelet = document.querySelectorAll('.item-btn-delete');
+            if (btnsDelet.length > 0) {
                 btnsDelet.forEach(btnDelet => {
-                    btnDelet.addEventListener('click', (e) => {
-                        const target = e.target.getAttribute('data-js');
-                        const lis = document.querySelectorAll(`li`);
-
-                        lis.forEach(li => {
-
-                            if(li.getAttribute('data-js') === target){
-                                li.remove()
-                            }
-                        })
+                    btnDelet.addEventListener('click', e => {
+                        deleteItemList(e);
                     })
                 })
             }
-
         });
     });
+
 };
