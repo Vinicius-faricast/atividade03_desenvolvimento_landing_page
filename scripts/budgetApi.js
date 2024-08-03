@@ -102,6 +102,12 @@ const deleteItemList = (e) => {
 
         }
     })
+};
+
+export const cleanBudget = () => {
+    const list = []
+    localStorage.setItem('listBudget', list);
+    renderList();
 }
 
 export const budgetApi = () => {

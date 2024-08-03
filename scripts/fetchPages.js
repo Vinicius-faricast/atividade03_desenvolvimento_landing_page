@@ -2,15 +2,16 @@ import { createFooter } from "./footerModule.js";
 import { createMobileMenu } from "./mobileNavbar.js";
 import { createNavBar } from "./navBarModule.js";
 import { budgetApi } from "./budgetApi.js";
+import { popUpBudget, popUpContact, popUpNewsletter } from "./popupModule.js";
 
 const root = document.querySelector('#root');
 
-const validateHash = (hash) => hash === ""  ? 'home' : hash.replace('#', '');
+const validateHash = (hash) => hash === "" ? 'home' : hash.replace('#', '');
 
 const renderPages = () => {
     let hash = window.location.hash;
 
-    if(window.location.hash ==='#about-us'){
+    if (window.location.hash === '#about-us') {
         hash = '';
     };
 
@@ -32,6 +33,7 @@ export const insertPages = () => {
         createFooter();
         renderPages();
         init()
+
     });
 };
 
@@ -40,6 +42,9 @@ export const fetchPages = async (url) => {
         const response = await fetch(url);
         const htmlInText = await response.text();
         root.innerHTML = htmlInText;
+        popUpNewsletter();
+        popUpContact();
+        popUpBudget();
     } catch (error) {
         throw new Error(`Erro ao carregar o arquivo: ${error}`);
     };

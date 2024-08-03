@@ -13,7 +13,17 @@ export const createMobileMenu = () => {
 
     const mobileMenu = document.querySelector('.mobile-menu');
     const navItens = document.querySelector('.nav-itens');
-    const navLinks = document.querySelectorAll('.nav-itens li')
+    const navLinks = document.querySelectorAll('.nav-itens li');
+    const menuBrand = document.querySelector('.logo');
     
     mobileMenu.addEventListener('click',() => handleClick(mobileMenu, navItens, navLinks));
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => handleClick(mobileMenu, navItens, navLinks));
+    });
+
+    menuBrand.addEventListener('click', () => {
+        navItens.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    })
 };

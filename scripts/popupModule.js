@@ -1,3 +1,5 @@
+import { cleanBudget } from "./budgetApi.js";
+
 const createModal = (form, message) => {
     const body = document.querySelector('.body');
 
@@ -28,4 +30,12 @@ export const popUpContact = () => {
     if(contactForm){
         createModal(contactForm, 'Mensagem enviada com sucesso!');
     }
+}
+
+export const popUpBudget = () => {
+    const budgetForm = document.querySelector('.budget-contact');
+    budgetForm.addEventListener('submit', () => {
+        createModal(budgetForm, 'Orçamento enviado com sucesso!');
+        cleanBudget()
+    })
 }

@@ -5,6 +5,7 @@
     top: 70vh;
     left: 70%;
     padding: 2rem;
+    width: fit-content;
     outline: none;
     border: none;
     border-right: 1rem solid var(--primary-color-extra-light);
